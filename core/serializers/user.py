@@ -49,6 +49,5 @@ class UserSerializer(serializers.ModelSerializer):
         model = User
         fields = [
             "id", "email", "name", "perfil",
-            "escola", "turma", "matricula",
             "is_active", "is_staff"
         ]

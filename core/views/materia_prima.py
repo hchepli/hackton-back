@@ -12,10 +12,10 @@ class MateriaPrimaViewSet(viewsets.ModelViewSet):
     filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
 
     # Campos para filtro exato
-    filterset_fields = ['nome', 'descricao']
+    filterset_fields = ['nome']
 
     # Campos de busca textual
-    search_fields = ['nome', 'descricao']
+    search_fields = ['nome',]
 
     # Campos permitidos para ordenação
     ordering_fields = ['nome', 'criado_em', 'atualizado_em']
